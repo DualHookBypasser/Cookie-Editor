@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Cookie Editor</h1>
+      <div class="controls">
+        <button id="refreshBtn" title="Refresh">⟳</button>
+        <button id="addBtn" title="Add Cookie">+</button>
+      </div>
+    </header>
+    
+    <div class="filter-section">
+      <input type="text" id="domainFilter" placeholder="Filter by domain...">
+      <input type="text" id="nameFilter" placeholder="Filter by name...">
+    </div>
+    
+    <div class="cookies-list" id="cookiesList">
+      <!-- Cookies will be loaded here -->
+    </div>
+    
+    <div class="no-cookies" id="noCookies" style="display: none;">
+      No cookies found for this domain.
+    </div>
 
+    <div class="status-bar" id="statusBar" style="display: none;">
+      <!-- Status messages will appear here -->
+    </div>
+  </div>
+  
+  <script src="log.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
